@@ -1,4 +1,4 @@
-# flutter_udemy_first
+# flutter_udemy
 
 This is the first app created in the Udemy course
 

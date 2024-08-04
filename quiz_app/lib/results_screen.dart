@@ -13,7 +13,13 @@ class ResultsScreen extends StatelessWidget {
   final void Function() onRestart;
   final List<String> chosenAnswers;
 
-  List<Map<String, Object>> getSummaryData() {
+  // This is a method which produces a list summary that it returns
+  // If you have methods like this which take no input values
+  // that just produces some data based on some class properties
+  // you can use a getter instead with the get keyword
+  // List<Map><String, Object>> getSummaryData() {
+  List<Map<String, Object>> get summaryData {
+    // this list is based on the chosenAnswers property
     final List<Map<String, Object>> summary = [];
 
     for (var i = 0; i < chosenAnswers.length; i++) {
@@ -33,11 +39,21 @@ class ResultsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final summaryData = getSummaryData();
+    // Then using a getter we don't call it like a method anymore
+    // final summaryData = summaryData();
+    // we would simply refer to it as a variable summaryData
+    // like this final summaryData = summaryData;
+    // but now the creation of this variable is redundant
     final totalQuestionsNumber = questions.length;
-    final correctQuestionsNumber = summaryData.where((data) {
-      return data['user_answer'] == data['correct_answer'];
-    }).length;
+    // a simple anonimous
+    // now we access summaryData like a property or like a variable
+    // enven though under the hood it is a method
+    // final correctQuestionsNumber = summaryData.where((data) {
+    final correctQuestionsNumber = summaryData
+        .where(
+          (data) => data['user_answer'] == data['correct_answer'],
+        )
+        .length;
 
     return SizedBox(
       width: double.infinity,

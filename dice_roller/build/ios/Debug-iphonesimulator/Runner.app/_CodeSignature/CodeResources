@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		QwZEVfpqjHBLBU0aoK1/e7ZX4vw=
+		OFy73ai/O5C8SjenMcrCvS5Obbc=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		qS4yqB1ZpBQH9aKhSpJX/bCpHZw=
+		rFK1jfcWWyJUme0qXQ7pkeogt/U=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		EHC1h9LDf2mp+PWg+zFj9+ivyiY=
+		qD2gIjn/KhYFt/DhzCVhqaddsQE=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -222,7 +222,7 @@
 		</data>
 		<key>Frameworks/Toast.framework/Toast</key>
 		<data>
-		WHl+cl8PKtMps4brY/db+93TJQk=
+		Hx5j70rmgAigO/21lKyDdie//kc=
 		</data>
 		<key>Frameworks/Toast.framework/Toast.bundle/Info.plist</key>
 		<data>
@@ -246,7 +246,7 @@
 		</data>
 		<key>Frameworks/fluttertoast.framework/fluttertoast</key>
 		<data>
-		ZvaaLMVfOeV9yAv4ahh2BcnBE+8=
+		IMqzNkadQLqPOgSRbDulRLnpsd8=
 		</data>
 		<key>Frameworks/fluttertoast.framework/fluttertoast_privacy.bundle/Info.plist</key>
 		<data>
@@ -341,7 +341,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UJdr7w0aQdBaJoN9m0QG96aNqOIoVLpfRGR0veadquA=
+			9gsnNzeDyboYkCD+ifenMPTzk5YpWh8LLc/siNfLoL8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -355,7 +355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hYH5FevWKvIqcv3vHPDbWILMv5fwYyqcHMixZGhI+jE=
+			CEcyR86GPYtOmlUwjO3h7UaKwcvmp7n9SgO06k9ZfWU=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -446,7 +446,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			43rOBEMxX6zPuyYlq2Lqo81AVH8Oexdn9tknqsKpmKg=
+			p6Jr6bc2CKGMH7FEMR/AEJIHbyw63W6HuKc1Tjwu8Vs=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -649,7 +649,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5OuBEGEho+UScwQoMDJYH+Vg6WX+1iynQAuBPd16NTU=
+			MU65DRF9bg89UQpNhdIMgkVwPaFTkniqtpm2UNm20iE=
 			</data>
 		</dict>
 		<key>Frameworks/Toast.framework/Toast.bundle/Info.plist</key>
@@ -691,7 +691,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xebgBU4gDuL6ozEx0d+VgyfSOrAWHj1CI0Y11H/73Qs=
+			iYmo6q/UIxGnrlnZiwH0njo/5sTvn9zbRYQcMOR1bk0=
 			</data>
 		</dict>
 		<key>Frameworks/fluttertoast.framework/fluttertoast_privacy.bundle/Info.plist</key>

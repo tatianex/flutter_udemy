@@ -56,7 +56,7 @@ class _QuestionScreenState extends State<QuestionsScreen> {
             // map creates a new list with new objects
             // ... take all the values from the list and "return" then separeted on the list
             // this is a chain we are calling a method on the result of another method
-            ...currentQuestion.getShuffledAnswers().map((answer) {
+            ...currentQuestion.shuffledAnswers.map((answer) {
               return AnswerButton(
                   answerText: answer,
                   onTap: () {

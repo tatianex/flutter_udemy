@@ -5,7 +5,9 @@ import 'package:intl/intl.dart';
 final formatter = DateFormat.yMd();
 
 class NewExpense extends StatefulWidget {
-  const NewExpense({super.key});
+  const NewExpense({super.key, required this.onAddExpense});
+
+  final void Function(Expense expense) onAddExpense;
 
   @override
   State<NewExpense> createState() {
@@ -50,6 +52,44 @@ class _NewExpenseState extends State<NewExpense> {
     // );
   }
 
+  void _submitExpenseData() {
+    final titleIsInvalid = _titleController.text.trim().isEmpty;
+    final inputAmount = double.tryParse(_amountController.text);
+    final amountIsInvalid = inputAmount == null || inputAmount <= 0;
+    final dateIsInvalid = _selectedDate == null;
+
+    if (titleIsInvalid || amountIsInvalid || dateIsInvalid) {
+      // show an error message
+      showDialog(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          title: const Text('Invalid inpu'),
+          content: const Text(
+              'Please make sure a valid title, amount, date and category was entered'),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(ctx);
+              },
+              child: const Text('Okay'),
+            )
+          ],
+        ),
+      );
+      return;
+    }
+
+    widget.onAddExpense(
+      Expense(
+        title: _titleController.text,
+        amount: inputAmount,
+        date: _selectedDate!,
+        category: _selectedCategory,
+      ),
+    );
+    Navigator.pop(context);
+  }
+
   // when using TextEditingController we have to call the dispose method
   // otherwise it will still be consuming memory
   // even if the widget is not visible anymore
@@ -63,7 +103,7 @@ class _NewExpenseState extends State<NewExpense> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.fromLTRB(16, 48, 16, 16),
       child: Column(
         children: [
           TextField(
@@ -136,11 +176,7 @@ class _NewExpenseState extends State<NewExpense> {
               ),
               const Spacer(),
               ElevatedButton(
-                onPressed: () {
-                  // print(_inputTitle);
-                  print(_titleController.text);
-                  print(_amountController.text);
-                },
+                onPressed: _submitExpenseData,
                 child: const Text('Save expense'),
               )
             ],

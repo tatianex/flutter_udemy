@@ -19,8 +19,7 @@ This repository so far includes the following apps:
 
 The Expense Tracker app allows users to track their daily expenses with an intuitive UI. The app categorizes expenses and displays them in an easy-to-read format.
 
-![Expense Tracker App Screenshot](assets/images/expense_tracker.png)
-<img src="assets/images/expense_tracker.png" width="100">
+<img src="assets/images/expense_tracker.png" width="300">
 
 ### Features
 
@@ -32,11 +31,11 @@ The Expense Tracker app allows users to track their daily expenses with an intui
 
 The Quiz App is made for asking and answering questions with a result screen at the end. The questions and its answers are about flutter right now but they can be personalized in the code.
 
-![Quiz App Screenshot](assets/images/quiz_app.png)
+<img src="assets/images/quiz_app.png" width="300">
 
-![Quiz App Screenshot](assets/images/quiz_app_questions.png)
+<img src="assets/images/quiz_app_questions.png" width="300">
 
-![Quiz App Screenshot](assets/images/quiz_app_answers.png)
+<img src="assets/images/quiz_app_answers.png" width="300">
 
 - **Answer Questions:** Test your knowledge and memorize what you've studied.
 - **View Questions answered:** See all your answers and check which were correct or incorrect.
@@ -46,7 +45,7 @@ The Quiz App is made for asking and answering questions with a result screen at 
 
 This app simulates rolling a dice, which can help make decisions or simply be used for fun.
 
-![Rool dice](assets/images/roll_dice.png)
+<img src="assets/images/roll_dice.png" width="300">
 
 ### Features
 

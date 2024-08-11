@@ -20,6 +20,7 @@ This repository so far includes the following apps:
 The Expense Tracker app allows users to track their daily expenses with an intuitive UI. The app categorizes expenses and displays them in an easy-to-read format.
 
 ![Expense Tracker App Screenshot](assets/images/expense_tracker.png)
+<img src="assets/images/expense_tracker.png" width="100">
 
 ### Features
 

@@ -55,6 +55,9 @@ class _ExpensesState extends State<Expenses> {
 
   void _opentAddExpenseOverlay() {
     showModalBottomSheet(
+      // make sure that we do not overlay our ui in the top of anything
+      // like the camera
+      useSafeArea: true,
       isScrollControlled: true,
       context: context,
       builder: (ctx) => NewExpense(onAddExpense: _addExpense),
@@ -89,6 +92,9 @@ class _ExpensesState extends State<Expenses> {
 
   @override
   Widget build(BuildContext context) {
+    final width = (MediaQuery.of(context).size.width);
+    // print(MediaQuery.of(context).size.height);
+
     Widget mainContent = const Center(
       child: Text('No expenses found. Start adding some!'),
     );
@@ -100,23 +106,39 @@ class _ExpensesState extends State<Expenses> {
       );
     }
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Expense Tracker'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.add),
-            onPressed: _opentAddExpenseOverlay,
-          )
-        ],
-      ),
-      body: Column(
-        children: [
-          Chart(expenses: _registeredExpenses),
-          Expanded(
-            child: mainContent,
-          )
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Expense Tracker'),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.add),
+              onPressed: _opentAddExpenseOverlay,
+            )
+          ],
+        ),
+        body: width < 600
+            ? Column(
+                children: [
+                  Chart(expenses: _registeredExpenses),
+                  Expanded(
+                    child: mainContent,
+                  )
+                ],
+              )
+            : Row(
+                // The row already takes as much space as it can get on the screen
+                // The chart has a property where its width is set to double.infinity
+                // And without putting it into the expanded it wouldn't work
+                children: [
+                  Expanded(
+                    child: Chart(expenses: _registeredExpenses),
+                  ),
+                  Expanded(
+                    child: mainContent,
+                  )
+                ],
+              ),
       ),
     );
   }

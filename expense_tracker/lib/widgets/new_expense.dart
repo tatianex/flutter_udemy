@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:expense_tracker/model/expense.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -38,9 +41,11 @@ class _NewExpenseState extends State<NewExpense> {
     // this line will only be executed once the pickedDate receive its value
     // because it is literally waiting for it
 
-    setState(() {
-      _selectedDate = pickedDate;
-    });
+    if (pickedDate != null) {
+      setState(() {
+        _selectedDate = pickedDate;
+      });
+    }
 
     // USING THEN
     // showDatePicker(
@@ -59,23 +64,7 @@ class _NewExpenseState extends State<NewExpense> {
     final dateIsInvalid = _selectedDate == null;
 
     if (titleIsInvalid || amountIsInvalid || dateIsInvalid) {
-      // show an error message
-      showDialog(
-        context: context,
-        builder: (ctx) => AlertDialog(
-          title: const Text('Invalid input'),
-          content: const Text(
-              'Please make sure a valid title, amount, date and category was entered'),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.pop(ctx);
-              },
-              child: const Text('Okay'),
-            )
-          ],
-        ),
-      );
+      _showErrorDialog();
       return;
     }
 
@@ -88,6 +77,41 @@ class _NewExpenseState extends State<NewExpense> {
       ),
     );
     Navigator.pop(context);
+  }
+
+  void _showErrorDialog() {
+    // This is how we can run different code for different platform
+    if (Platform.isIOS) {
+      showCupertinoDialog(
+        context: context,
+        builder: (ctx) => CupertinoAlertDialog(
+          title: const Text('Invalid input'),
+          content: const Text(
+              'Please make sure a valid title, amount, date, and category are entered.'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('Okay'),
+            ),
+          ],
+        ),
+      );
+    } else {
+      showDialog(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          title: const Text('Invalid input'),
+          content: const Text(
+              'Please make sure a valid title, amount, date, and category are entered.'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('Okay'),
+            ),
+          ],
+        ),
+      );
+    }
   }
 
   // when using TextEditingController we have to call the dispose method

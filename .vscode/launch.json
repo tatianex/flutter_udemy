@@ -71,5 +71,11 @@
             "request": "launch",
             "type": "dart"
         },
+        {
+            "name": "meals",
+            "cwd": "meals",
+            "request": "launch",
+            "type": "dart"
+        },
     ]
 }

@@ -102,3 +102,7 @@ so instead of using:
 }
 we can use:
 () => value
+
+## Créditos
+
+- Ícones de [Pinóquio](https://www.flaticon.com/br/icones-gratis/pinoquio) criados por [Freepik](https://www.flaticon.com/authors/freepik) - disponíveis em [Flaticon](https://www.flaticon.com).

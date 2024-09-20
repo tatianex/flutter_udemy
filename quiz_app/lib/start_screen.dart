@@ -28,13 +28,13 @@ class StartScreen extends StatelessWidget {
           //   color: Colors.red,
           // ),
           Image.asset(
-            'assets/images/quiz-logo.png',
+            'assets/images/pinoquio.png',
             width: 300,
-            color: const Color.fromARGB(255, 30, 2, 61),
+            // color: const Color.fromARGB(255, 30, 2, 61),
           ),
           const SizedBox(height: 80),
           Text(
-            'Learn Flutter the fun way!',
+            '2 Verdades e 1 Mentira',
             // style:
             //     TextStyle(color: Color.fromARGB(255, 30, 2, 61), fontSize: 24),
             style: GoogleFonts.lato(
@@ -52,7 +52,7 @@ class StartScreen extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               foregroundColor: const Color.fromARGB(255, 30, 2, 61),
             ),
-            icon: const Icon(Icons.arrow_right_alt),
+            // icon: const Icon(Icons.arrow_right_alt),
             label: const Text('Start Quiz'),
           )
         ],

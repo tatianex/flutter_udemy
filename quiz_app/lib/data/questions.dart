@@ -1,14 +1,14 @@
 import 'package:quiz_app/model/quiz_question.dart';
 
 const questions = [
-  QuizQuestion(
-    'Qual é a mentira sobre a Jéssica?',
-    [
-      'Tenho dois filhos o Miguel e o Lucas',
-      'Gosto de desenhar',
-      'QA por amor',
-    ],
-  ),
+  // QuizQuestion(
+  //   'Qual é a mentira sobre a Jéssica?',
+  //   [
+  //     'Já pilotei um avião',
+  //     'Gosto de desenho',
+  //     'Tenho dois filhos',
+  //   ],
+  // ),
   QuizQuestion(
     'Qual é a mentira sobre a Tati?',
     [
@@ -20,27 +20,27 @@ const questions = [
   QuizQuestion(
     'Qual é a mentira sobre o Marco?',
     [
-      'Já fiz rapel',
-      'Sou Flamengo',
-      'Sou casado e tenho dois filhos',
+      'Minha esposa está grávida de novo!',
+      'Já tive uma banda católica',
+      'Nunca andei de bondinho no pão de açucar no Rio',
     ],
   ),
   QuizQuestion(
     'Qual é a mentira sobre o Serodio?',
     [
-      'Não sei andar de bicicleta',
-      'Sou vasco',
-      'Já quis ser piloto de avião',
+      'O país que eu mais quero conhecer no mundo é o Estados Unidos',
+      'Tive problemas legais para baixar filme pirata',
+      'Já fiz aula de capoeira',
     ],
   ),
-  QuizQuestion(
-    'Qual é a mentira sobre o Neto?',
-    [
-      'Não sei nadar',
-      'Já fui candidato a vereador',
-      'Sou formado em Engenharia Civil',
-    ],
-  ),
+  // QuizQuestion(
+  //   'Qual é a mentira sobre o Neto?',
+  //   [
+  //     'Flamenguista',
+  //     'Já fui eng civil e candidato a vereador',
+  //     'Já vendi hinode',
+  //   ],
+  // ),
   QuizQuestion(
     'Qual é a mentira sobre o Flavio?',
     [
@@ -60,17 +60,17 @@ const questions = [
   QuizQuestion(
     'Qual é a mentira sobre o Thiago?',
     [
-      'Tenho mais de 40 anos',
-      'Gosto de corrida de carros',
-      'Minha mãe era minha professora',
+      'Já fiz mochilão pelo Brasil',
+      'Já fiz um podcast mesmo antes de ser modinha',
+      'Primeira vez que andei de Kart já fui no pódio',
     ],
   ),
   QuizQuestion(
     'Qual é a mentira sobre a Marjorie?',
     [
-      'Gosto de Naruto',
-      'Já viajei pra muitos paises',
-      'Formada em Engenheira Química',
+      'Já pulei de bungee jumping',
+      'Faço trilha off road (quadriciclo)',
+      'Toco guitarra',
     ],
   ),
   QuizQuestion(

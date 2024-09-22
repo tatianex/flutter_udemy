@@ -12,9 +12,9 @@ const questions = [
   QuizQuestion(
     'Qual é a mentira sobre a Tati?',
     [
-      'Sou poliglota',
+      'Leio 30 livros por ano',
       'Já capotei um carro',
-      'Já fiz ballet',
+      'Já dei aula de dança gaúcha',
     ],
   ),
   QuizQuestion(
@@ -33,14 +33,14 @@ const questions = [
       'Já fiz aula de capoeira',
     ],
   ),
-  // QuizQuestion(
-  //   'Qual é a mentira sobre o Neto?',
-  //   [
-  //     'Flamenguista',
-  //     'Já fui eng civil e candidato a vereador',
-  //     'Já vendi hinode',
-  //   ],
-  // ),
+  QuizQuestion(
+    'Qual é a mentira sobre o Neto?',
+    [
+      'Já pulei de paraquedas',
+      'Já toquei trompete',
+      'Já quebrei o braço',
+    ],
+  ),
   QuizQuestion(
     'Qual é a mentira sobre o Flavio?',
     [

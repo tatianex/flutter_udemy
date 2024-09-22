@@ -74,7 +74,7 @@ class _QuizState extends State<Quiz> {
       );
     }
 
-    return MaterialApp(
+    final material = MaterialApp(
       home: Scaffold(
         body: Container(
           color: Colors.white,
@@ -97,5 +97,14 @@ class _QuizState extends State<Quiz> {
         ),
       ),
     );
+
+    // final preview = kIsWeb
+    //     ? DevicePreview(
+    //         backgroundColor: Colors.white,
+    //         builder: (context) => screenWidget,
+    //       )
+    //     : material;
+
+    return material;
   }
 }

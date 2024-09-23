@@ -29,37 +29,35 @@ class SummaryItem extends StatelessWidget {
             children: [
               Semantics(
                 container: true,
-                child: Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Text(
-                        semanticsLabel: 'A pergunta era: $question',
-                        question,
-                        style: GoogleFonts.lato(
-                            color: const Color.fromARGB(255, 30, 2, 61),
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        semanticsLabel: 'Você respondeu: $userAnswer',
-                        userAnswer,
-                        style: GoogleFonts.lato(
-                            color: const Color.fromARGB(255, 30, 2, 61),
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        semanticsLabel: 'A resposta correta: $correct',
-                        correct,
-                        style: GoogleFonts.lato(
-                            color: const Color.fromARGB(255, 24, 101, 27),
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  ),
+                child: Column(
+                  // Removed the Expanded here
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      semanticsLabel: 'A pergunta era: $question',
+                      question,
+                      style: GoogleFonts.lato(
+                          color: const Color.fromARGB(255, 30, 2, 61),
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      semanticsLabel: 'Você respondeu: $userAnswer',
+                      userAnswer,
+                      style: GoogleFonts.lato(
+                          color: const Color.fromARGB(255, 30, 2, 61),
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      semanticsLabel: 'A resposta correta: $correct',
+                      correct,
+                      style: GoogleFonts.lato(
+                          color: const Color.fromARGB(255, 24, 101, 27),
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
                 ),
               ),
             ],

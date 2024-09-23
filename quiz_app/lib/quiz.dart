@@ -1,3 +1,5 @@
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_app/data/questions.dart';
 import 'package:quiz_app/questions_screen.dart';
@@ -98,13 +100,13 @@ class _QuizState extends State<Quiz> {
       ),
     );
 
-    // final preview = kIsWeb
-    //     ? DevicePreview(
-    //         backgroundColor: Colors.white,
-    //         builder: (context) => screenWidget,
-    //       )
-    //     : material;
+    final preview = kIsWeb
+        ? DevicePreview(
+            backgroundColor: Colors.white,
+            builder: (context) => screenWidget,
+          )
+        : material;
 
-    return material;
+    return preview;
   }
 }

@@ -1,19 +1,27 @@
 import 'package:quiz_app/model/quiz_question.dart';
 
 const questions = [
-  // QuizQuestion(
-  //   'Qual é a mentira sobre a Jéssica?',
-  //   [
-  //     'Já pilotei um avião',
-  //     'Gosto de desenho',
-  //     'Tenho dois filhos',
-  //   ],
-  // ),
+  QuizQuestion(
+    'Qual é a mentira sobre a Jé?',
+    [
+      'Falo inglês',
+      'Já caiu um guarda roupa em cima de mim quando criança',
+      'Tenho medo de aranha',
+    ],
+  ),
+  QuizQuestion(
+    'Qual é a mentira sobre o Alvaro?',
+    [
+      'Já palestrei na Campus Party',
+      'Já fiz parte de um grupo de liturgia na igreja',
+      'Já fui assaltado e o ladrão devolveu minha carteira',
+    ],
+  ),
   QuizQuestion(
     'Qual é a mentira sobre a Tati?',
     [
       'Leio 30 livros por ano',
-      'Já capotei um carro',
+      'Já participei de um coral',
       'Já dei aula de dança gaúcha',
     ],
   ),
@@ -58,7 +66,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'Qual é a mentira sobre o Thiago?',
+    'Qual é a mentira sobre o Thi?',
     [
       'Já fiz mochilão pelo Brasil',
       'Já fiz um podcast mesmo antes de ser modinha',
@@ -74,7 +82,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'Qual é a mentira sobre o Renato',
+    'Qual é a mentira sobre o Re?',
     [
       'Já quebrei o pulso andando de bicicleta',
       'Já fui de uma comunidade cigana',

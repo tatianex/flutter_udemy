@@ -11,6 +11,9 @@ class SummaryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final isCorrectAnswer =
         itemData['user_answer'] == itemData['correct_answer'];
+    final userAnswer = itemData['user_answer'] as String;
+    final correct = itemData['correct_answer'] as String;
+    final question = itemData['question'] as String;
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,27 +27,40 @@ class SummaryItem extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                itemData['question'] as String,
-                style: GoogleFonts.lato(
-                    color: const Color.fromARGB(255, 30, 2, 61),
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(width: 8),
-              Text(
-                itemData['user_answer'] as String,
-                style: GoogleFonts.lato(
-                    color: const Color.fromARGB(255, 30, 2, 61),
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold),
-              ),
-              Text(
-                itemData['correct_answer'] as String,
-                style: GoogleFonts.lato(
-                    color: const Color.fromARGB(255, 24, 101, 27),
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold),
+              Semantics(
+                container: true,
+                child: Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Text(
+                        semanticsLabel: 'A pergunta era: $question',
+                        question,
+                        style: GoogleFonts.lato(
+                            color: const Color.fromARGB(255, 30, 2, 61),
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        semanticsLabel: 'Você respondeu: $userAnswer',
+                        userAnswer,
+                        style: GoogleFonts.lato(
+                            color: const Color.fromARGB(255, 30, 2, 61),
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        semanticsLabel: 'A resposta correta: $correct',
+                        correct,
+                        style: GoogleFonts.lato(
+                            color: const Color.fromARGB(255, 24, 101, 27),
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),

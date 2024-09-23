@@ -34,6 +34,7 @@ class StartScreen extends StatelessWidget {
           ),
           const SizedBox(height: 80),
           Text(
+            semanticsLabel: 'Duas verdade e uma mentira',
             '2 Verdades e 1 Mentira',
             // style:
             //     TextStyle(color: Color.fromARGB(255, 30, 2, 61), fontSize: 24),
@@ -53,7 +54,7 @@ class StartScreen extends StatelessWidget {
               foregroundColor: const Color.fromARGB(255, 30, 2, 61),
             ),
             // icon: const Icon(Icons.arrow_right_alt),
-            label: const Text('Start Quiz'),
+            label: const Text('Começar Quiz'),
           )
         ],
       ),

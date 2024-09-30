@@ -1,6 +1,6 @@
 # flutter_udemy
 
-This is the first app created in the Udemy course
+The dice_roller is the first app created in the Udemy course
 
 Flutter & Dart - The Complete Guide [2024 Edition]
 A Complete Guide to the Flutter SDK &amp; Flutter Framework for building native iOS and Android apps

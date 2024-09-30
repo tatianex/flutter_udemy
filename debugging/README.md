@@ -1,6 +1,6 @@
 # flutter_udemy
 
-Recreated just to practise debugging
+This was the quiz_app recreated just to practise debugging so this is the third separeted project in this course
 This is the app is basically the same app that is in the quiz_app folder
 but it was introduced some errors wich were corrected during the module 
 

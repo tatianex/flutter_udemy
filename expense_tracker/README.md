@@ -1,16 +1,77 @@
 # expense_tracker
 
-A new Flutter project.
+This is the fourth app created in the Udemy course
 
-## Getting Started
+Flutter & Dart - The Complete Guide [2024 Edition]
+A Complete Guide to the Flutter SDK &amp; Flutter Framework for building native iOS and Android apps
+- [Udemy course: Flutter & Dart - The Complete Guide](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/?couponCode=ACCAGE0923)
 
-This project is a starting point for a Flutter application.
+# What was seen here - overview
+# Section 4: Handling User Input & Theming
 
-A few resources to get you started if this is your first Flutter project:
+This section covers important concepts for handling user input and managing theming in Flutter apps.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## User Input
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- To show snack bars, we used:
+    ```dart
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar()
+    );
+    ```
+
+- We also learned how to display modals using the `showModalBottomSheet()` function:
+    ```dart
+    showModalBottomSheet(
+      isScrollControlled: true,
+      context: context,
+      builder: (ctx) => NewExpense(onAddExpense: _addExpense),
+    );
+    ```
+
+- Handling user input was explored through:
+  - **TextField()**
+  - **DropDownButton()**
+
+- We built a custom date picker using `showDatePicker()` and also explored how to display dialogs with `showDialog()`. In all these cases, **context** is crucial as it carries meta-information about the widget's position and relationship to other widgets, which Flutter uses to display additional UI elements.
+
+- Managing input was done using **TextEditingController()**, but we learned that it’s important to call `dispose()` after using it to avoid memory leaks:
+    ```dart
+    @override
+    void dispose() {
+      _controller.dispose();
+      super.dispose();
+    }
+    ```
+
+- We also covered how to pass pointers to functions between widgets so that child widgets can trigger functions that belong to their parent widgets.
+
+## List Handling
+
+- We used the **ListView** widget with its `builder` method to create efficient lists of unknown length.
+  
+- Additionally, we learned about the **Dismissible()** widget, which simplifies making list items swipeable and dismissible.
+
+## Theming
+
+- We explored how to set up theming by defining color themes and how to support both **light** and **dark** modes.
+  
+- To avoid setting up themes from scratch, we used the `copyWith()` method to inherit default theme settings and override only the values we needed:
+    ```dart
+    Theme.of(context).copyWith(
+      colorScheme: ColorScheme.light(
+        primary: Colors.purple,
+      ),
+    );
+    ```
+
+## Additional Widgets
+
+- We worked with other widgets like:
+  - **IconButton()**
+  - **AppBar()**
+
+---
+
+This section provided foundational skills in handling user input and customizing app theming while ensuring efficient resource management and performance.
+

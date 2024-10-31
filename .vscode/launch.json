@@ -4,7 +4,6 @@
     // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
         {
             "name": "debugging",
             "cwd": "debugging",
@@ -31,40 +30,12 @@
             "request": "launch",
             "type": "dart"
         },
-        // {
-        //     "name": "dice_roller (profile mode)",
-        //     "cwd": "dice_roller",
-        //     "request": "launch",
-        //     "type": "dart",
-        //     "flutterMode": "profile"
-        // },
-        // {
-        //     "name": "dice_roller (release mode)",
-        //     "cwd": "dice_roller",
-        //     "request": "launch",
-        //     "type": "dart",
-        //     "flutterMode": "release"
-        // },
         {
             "name": "quiz_app",
             "cwd": "quiz_app",
             "request": "launch",
             "type": "dart"
         },
-        // {
-        //     "name": "quiz_app (profile mode)",
-        //     "cwd": "quiz_app",
-        //     "request": "launch",
-        //     "type": "dart",
-        //     "flutterMode": "profile"
-        // },
-        // {
-        //     "name": "quiz_app (release mode)",
-        //     "cwd": "quiz_app",
-        //     "request": "launch",
-        //     "type": "dart",
-        //     "flutterMode": "release"
-        // }
         {
             "name": "expense_tracker",
             "cwd": "expense_tracker",
@@ -73,6 +44,12 @@
         },
         {
             "name": "meals",
+            "cwd": "meals",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "meals_with_riverpod",
             "cwd": "meals",
             "request": "launch",
             "type": "dart"

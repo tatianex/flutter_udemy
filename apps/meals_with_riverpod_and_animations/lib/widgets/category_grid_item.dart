@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meals_with_riverpod/model/category.dart';
+import 'package:meals_with_riverpod_and_animations/model/category.dart';
 
 class CategoryGridItem extends StatelessWidget {
   const CategoryGridItem({

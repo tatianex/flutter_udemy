@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:meals_with_riverpod/providers/favorites_provider.dart';
-import 'package:meals_with_riverpod/screens/categories.dart';
-import 'package:meals_with_riverpod/screens/filters.dart';
-import 'package:meals_with_riverpod/screens/meals.dart';
-import 'package:meals_with_riverpod/widgets/main_drawer.dart';
-
+import 'package:meals_with_riverpod_and_animations/providers/favorites_provider.dart';
+import 'package:meals_with_riverpod_and_animations/screens/categories.dart';
+import 'package:meals_with_riverpod_and_animations/screens/filters.dart';
+import 'package:meals_with_riverpod_and_animations/screens/meals.dart';
+import 'package:meals_with_riverpod_and_animations/widgets/main_drawer.dart';
 import '../providers/filters_provider.dart';
 
 const kInitialFilters = {

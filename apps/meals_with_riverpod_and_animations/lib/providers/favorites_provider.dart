@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:meals_with_riverpod/model/meal.dart';
+import 'package:meals_with_riverpod_and_animations/model/meal.dart';
 
 class FavoriteMealsNotifier extends StateNotifier<List<Meal>> {
   FavoriteMealsNotifier() : super([]);

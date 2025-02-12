@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meals_with_riverpod/model/meal.dart';
-import 'package:meals_with_riverpod/widgets/meal_item_trait.dart';
+import 'package:meals_with_riverpod_and_animations/model/meal.dart';
+import 'package:meals_with_riverpod_and_animations/widgets/meal_item_trait.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class MealItem extends StatelessWidget {

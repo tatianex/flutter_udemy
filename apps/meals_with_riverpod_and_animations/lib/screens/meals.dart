@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:meals_with_riverpod/model/meal.dart';
-import 'package:meals_with_riverpod/screens/meal_details.dart';
-import 'package:meals_with_riverpod/widgets/meal_item.dart';
+import 'package:meals_with_riverpod_and_animations/model/meal.dart';
+import 'package:meals_with_riverpod_and_animations/screens/meal_details.dart';
+import 'package:meals_with_riverpod_and_animations/widgets/meal_item.dart';
 
 class MealsScreen extends StatelessWidget {
   const MealsScreen({

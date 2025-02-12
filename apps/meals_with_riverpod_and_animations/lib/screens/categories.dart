@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:meals_with_riverpod/data/dummy_data.dart';
-import 'package:meals_with_riverpod/model/category.dart';
-import 'package:meals_with_riverpod/model/meal.dart';
-import 'package:meals_with_riverpod/screens/meals.dart';
-import 'package:meals_with_riverpod/widgets/category_grid_item.dart';
+import 'package:meals_with_riverpod_and_animations/data/dummy_data.dart';
+import 'package:meals_with_riverpod_and_animations/model/category.dart';
+import 'package:meals_with_riverpod_and_animations/model/meal.dart';
+import 'package:meals_with_riverpod_and_animations/screens/meals.dart';
+import 'package:meals_with_riverpod_and_animations/widgets/category_grid_item.dart';
 
 class CategoriesScreen extends StatefulWidget {
   const CategoriesScreen({

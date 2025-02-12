@@ -46,5 +46,11 @@
             "request": "launch",
             "type": "dart"
         },
+        {
+            "name": "shopping_list",
+            "cwd": "shopping_list",
+            "request": "launch",
+            "type": "dart"
+        },
     ]
 }
